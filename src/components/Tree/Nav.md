@@ -19,6 +19,20 @@ Nav，又称为导航栏组件。用来构建网站导航模块。
 首先引入基础导航组件，同时选择相关的插件
 
 ```js
+//menu.js文件示例
+let menu = [
+  {
+    name: '首页', // 导航名称，必填属性
+    selfStyle: '', // 导航的每一项的样式，选填属性，我们默认为其设置了self-deafult样式，详见default.css
+    childStyle: '', // 每一级导航的样式，选填属性，我们默认为其设置了child-deafult样式，详见default.css
+    deepth: 1,  // 导航层级设置，必填属性，用于判断导航层级，从而设置导航位置
+    url: '#'  // 导航链接，必填属性
+    child:[] // 子菜单，选填属性，可以在child中进行下一层级导航内容编写
+  }
+]
+```
+
+```js
 // user.vue <script>
 import rawData from './menu' // 1.导入你自己编写的menu.js文件,这里包含导航的层级关系数据
 import Tree from './Tree' // 2.导入Tree组件
@@ -48,7 +62,7 @@ export default {
 <!-- nav.vue <template>-->
     <ul >
        <tree v-for="m in menu"  :key="m.id" :tree="m":root-tree="m"></tree> // 7.引入tree标签，并且利用v-for 将刚才加工好的数据进行循环，并把每一项传递到子组件Tree中
-     </ul>
+    </ul>
 ```
 
 #### 整体导航实现示例
@@ -101,4 +115,5 @@ export default {
   </ul>
   <div  @click="showM"><img src="../../assets/img/menu.png" alt=""></div> // 5.在移动端时，对导航进行手动显隐控制的按钮
 ```
-最后，我们就可以在其他页面引用我们的导航组件了。当然，我们要引入的是nav.vue，不是Tree.vue
+
+最后，我们就可以在其他页面引用我们的导航组件了。当然，我们要引入的是 nav.vue，不是 Tree.vue
