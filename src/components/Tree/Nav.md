@@ -82,7 +82,7 @@ export default {
     // 2.为window对象添加窗口变化监听事件，实现窗口宽度小于992px时自动隐藏导航栏
     window.addEventListener('resize', () => {
       let screenWidth = document.body.clientWidth
-      if (screenWidth > 992) return (this.showMenuM = true)
+      if (screenWidth > 992) return (this.showMenu = true)
       this.showMenu = false
     })
   },
