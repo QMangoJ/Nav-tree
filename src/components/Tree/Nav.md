@@ -101,3 +101,4 @@ export default {
   </ul>
   <div  @click="showM"><img src="../../assets/img/menu.png" alt=""></div> // 5.在移动端时，对导航进行手动显隐控制的按钮
 ```
+最后，我们就可以在其他页面引用我们的导航组件了。当然，我们要引入的是nav.vue，不是Tree.vue
