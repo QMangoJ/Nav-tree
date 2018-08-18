@@ -1,0 +1,38 @@
+/* 样式重置 */
+* {
+  list-style: none;
+  text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 屏幕宽度大于992px */
+@media (min-width: 992px) {
+  .parent-default {
+    position: relative;
+  }
+}
+
+/* 屏幕宽度小于991.98px */
+@media (max-width: 991.98px) {
+  .parent-default {
+    text-align: left;
+  }
+  .child-default {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,48 @@
+/* 公共样式-父组件样式 */
+
+.header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px rgba(131, 131, 131, 0.3);
+  height: 60px;
+  position: relative;
+}
+.contain-fluid {
+  position: relative;
+  height: 100%;
+}
+.logo {
+  float: left;
+  position: relative;
+  font: 22px/60px '微软雅黑';
+  color: rgb(26, 26, 26);
+}
+.search {
+  float: right;
+  position: relative;
+  font: 22px/60px '微软雅黑';
+  color: rgb(26, 26, 26);
+}
+.row {
+  margin: 0;
+}
+.xx{
+  font-size:26px;
+}
+/* 屏幕宽度大于768px */
+@media (min-width: 768px) {
+  .menu-zdy {
+    width: 100%;
+    /* position: relative; */
+  }
+  .search {
+    visibility: hidden;
+  }
+
+}
+/* 屏幕宽度小于767.98px */
+@media (max-width: 767.98px) {
+  .menu-zdy {
+    top: 60px;
+    left: 0;
+  }
+}

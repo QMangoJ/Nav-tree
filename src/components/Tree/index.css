@@ -1,0 +1,226 @@
+/* ****** 屏幕尺寸大于992px时 ****** */
+@media (min-width: 992px) {
+  /* 最外层 header */
+  .header {
+    position: fixed;
+    float: left;
+    height: 60px;
+    width: 100%;
+    background-color: #000034;
+  }
+
+  /* logo */
+  .logo {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-right: 1px solid #ccc;
+  }
+  .nav-zdy {
+    float: left;
+    height: 60px;
+  }
+  .menu-zdy {
+    float: left;
+    height: 100%;
+  }
+  .menu-zdy > li a {
+    color: rgb(255, 255, 255);
+  }
+
+  /* 二级导航 */
+  .menu-zdy > li > ul > li a {
+    display: block;
+    color: rgb(255, 255, 255);
+  }
+  .menu-zdy > li {
+    display: inline-block;
+    margin: 0 20px;
+    font: 16px/60px '微软雅黑';
+  }
+  .menu-zdy > li > a:hover {
+    color: #0098eb;
+  }
+  .menu-zdy > li:hover {
+    background: url('../../assets/img/arrow.png') center bottom no-repeat;
+  }
+  .menu-zdy > li:nth-child(1):hover {
+    background: none;
+  }
+
+  /* 二级菜单整体 */
+  .menu-zdy > li > ul {
+    margin: 0 -20px 0;
+    /* width: 100px;
+    height: 140px; */
+    background-color: rgb(20, 20, 20);
+  }
+
+  /* 二级菜单中的每一项 */
+  .menu-zdy > li > ul > li {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100px;
+  }
+  .menu-zdy > li > ul > li a:hover {
+    color: #0098eb;
+  }
+  .menu-zdy > li > ul > li:nth-child(1) {
+    margin-top: 10px;
+  }
+  .menu-zdy > li > ul > li:last-child {
+    margin-bottom: 10px;
+  }
+
+  /* 语言选择 搜索框 菜单按钮 */
+  .search {
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    height: 100%;
+  }
+  .search .change {
+    float: left;
+    font: 16px/60px '微软雅黑';
+  }
+  .search .change-select {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+  }
+  .search .change-select:hover {
+    color: rgb(32, 151, 248);
+    cursor: pointer;
+  }
+  .input {
+    float: left;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 20px;
+  }
+  .input .search-input {
+    padding-left: 20px;
+    width: 140px;
+    height: 30px;
+    text-align: left;
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  .input .search-input:focus {
+    outline: none;
+  }
+  .input .icon {
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  .search .qiehuan {
+    float: right;
+    line-height: 60px;
+    display: none;
+  }
+}
+
+
+/* ****** 屏幕尺寸小于991.98px时 ****** */
+@media (max-width: 991.98px) {
+  .parent-default {
+    margin: 0;
+    padding-left: 1rem;
+    text-align: left;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+  }
+  .parent-default a {
+    display: inline-block;
+    padding: 0.5rem 0 0.5rem 0;
+    color: aliceblue;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font: 14px/20px '微软雅黑';
+  }
+  .parent-default a:hover {
+    color: rgb(155, 155, 155);
+  }
+
+  /* 整个导航最外层 header */
+  .header {
+    position: fixed;
+    float: left;
+    height: 60px;
+    width: 100%;
+    background-color: #000034;
+  }
+
+  /* logo */
+  .logo {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-right: 1px solid #ccc;
+  }
+
+  /* tree组件 */
+  .nav-zdy {
+    position: absolute;
+    float: left;
+    top: 60px;
+    width: 100%;
+  }
+
+  /*语言选择 搜索框 菜单按钮*/
+  .search {
+    position: relative;
+    float: right;
+    height: 100%;
+  }
+  .search .change {
+    float: left;
+    font: 16px/60px '微软雅黑';
+  }
+  .search .change-select {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+  }
+  .search .change-select:hover {
+    color: rgb(32, 151, 248);
+    cursor: pointer;
+  }
+  .input {
+    float: left;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 20px;
+  }
+  .input .search-input {
+    padding-left: 20px;
+    width: 140px;
+    height: 30px;
+    text-align: left;
+    color: white;
+    background: transparent;
+    border: 0;
+  }
+  .input .icon {
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  .search .qiehuan {
+    float: right;
+    line-height: 60px;
+    visibility: visible;
+  }
+}
