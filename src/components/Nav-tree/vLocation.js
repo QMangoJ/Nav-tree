@@ -1,3 +1,10 @@
+/**
+ * Location指令进行各层级定位
+ * @module Nav-tree/vLocation
+ * @param {Object} el 父级树，也就是ul
+ * @param {Number} binding binding.value的值为
+ */
+
 let vLocation = {
   inserted: function(el, binding, vnode) {
     // 获取父节点

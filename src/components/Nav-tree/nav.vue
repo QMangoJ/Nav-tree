@@ -35,11 +35,14 @@ import rawData from './menu'
 import Tree from './Tree'
 import TreePack from './TreePack.js'
 /**
- * 该组件为父组件，在此组件引入和注册Tree组件
+ * 该组件为父组件，在此组件引入和注册组件子组件Tree
  * @vue-data {Array} menu - 将导航数据处理成数组形式的数据
- * @vue-data {Bool} showMenu - 通过改变showMenu值，进行控制不同屏幕尺寸下的导航显示和隐藏
+ * @vue-data {Bool}  [showMenu=true] - 通过改变showMenu值，进行控制不同屏幕尺寸下的导航显示和隐藏
+ * @file This is parent component of Tree.
+ * @copyright jidenghao 2018.08.20.
  * @module Nav-tree/nav
  */
+
 export default {
   data() {
     return {
@@ -63,8 +66,11 @@ export default {
       this.showMenu = false
     })
   },
+
   methods: {
-    // 移动端，实现点击菜单按钮显示导航
+    /**
+     *  移动端，实现点击菜单按钮显示导航
+     */
     showM: function() {
       this.showMenu = !this.showMenu
     }

@@ -16,7 +16,6 @@ function dataPack(tree, index) {
   n.selfStyle = n.selfStyle || 'parent-default'
   n.childStyle = n.childStyle || 'child-default '
   n.url = n.url || 'https://baidu.com'
-
   n.isShow = n.isShow || false
   n.index = index
 
