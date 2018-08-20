@@ -2,7 +2,11 @@ let gTreeData = {}
 let gRoot = {}
 
 /**
- * 沿着tPath路径对menu进行控制状态改变
+ * 此文件通过控制路径，对导航进行显隐状态控制
+ * @module Nav-tree/vEvent
+ */
+/**
+ *  沿着tPath路径对menu进行控制状态改变
  * @param {object} menu 表示树节点，用来与index进行对比，进行判断是否显示其子节点
  * @param {number} index 表示该层兄弟节点中，具体哪个需要显示其子节点
  * @param {Array} tPath 迭代过程的全局路径，每次迭代并不变化

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import navTree from '../../components/Tree/nav'
+import navTree from '../../components/Nav-tree/nav'
 export default {
   data() {
     return {}

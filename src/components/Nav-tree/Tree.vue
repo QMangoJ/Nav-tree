@@ -23,6 +23,7 @@ import Event from './vEvent' // 事件监听与绑定采用指令来实现
  * 该组件的目的主要是实现组件的递归 参考：https://segmentfault.com/q/1010000008438636
  * @vue-prop {Object:Tree} tree - 需要以tree的形式显示的当前节点
  * @vue-prop {Object:Tree} rootTree - 全局tree根节点，只在初始渲染中有效，在迭代子过程中被失效，具体方式是将其赋值为-1
+ * @module Nav-tree/Tree
  */
 
 export default {

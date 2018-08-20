@@ -38,6 +38,7 @@ import TreePack from './TreePack.js'
  * 该组件为父组件，在此组件引入和注册Tree组件
  * @vue-data {Array} menu - 将导航数据处理成数组形式的数据
  * @vue-data {Bool} showMenu - 通过改变showMenu值，进行控制不同屏幕尺寸下的导航显示和隐藏
+ * @module Nav-tree/nav
  */
 export default {
   data() {

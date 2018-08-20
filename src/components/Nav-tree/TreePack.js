@@ -1,5 +1,10 @@
-// 递归函数，遍历对象的各个子节点
 /**
+ * 递归函数，遍历对象的各个子节点
+ * @module Nav-tree/TreePack
+ */
+
+/**
+ * 将menu打包
  * @param {string} tree 导航树所有内容
  * @param {string} index 索引值
  */
