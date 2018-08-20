@@ -16,3 +16,7 @@ yarn doc
 ## 开发规约
 
 - 相关开发规约请参考： http://git.tuositec.com/yangjiae/note/wiki/%E6%8B%93%E6%80%9D%E7%A7%91%E6%8A%80%E5%BC%80%E5%8F%91%E8%A7%84%E7%BA%A6
+
+## 版本
+
+- 对导航不同的排版进行抽象封装，其中包含LOGO、导航树、搜索框。
