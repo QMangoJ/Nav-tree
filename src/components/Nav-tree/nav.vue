@@ -2,27 +2,27 @@
   <div class="container-fluid">
     <div class="header row">
       <!-- logo-begin -->
-      <div class="col-2 logo">
+      <div class=" logo">
          <img src="../../assets/img/logo.png" width="140px" height="48px"/>
       </div>
       <!-- logo-end -->
       <!-- nav-begin -->
-      <div class="col-6 nav-zdy">
+      <div class="nav-zdy">
           <ul class="menu-zdy" v-show="showMenu">
             <tree v-for="m in menu"  :key="m.id" :tree="m" :root-tree="m"></tree>
           </ul>
       </div>
       <!-- nav-end -->
       <!-- search-begin -->
-      <div class="col-4 search">
+      <div class="search">
           <div class="change">
             <select class="change-select">
-              <option value="CHINESE">CHINESE/中文</option>
-              <option value="ENGLISH">ENGLISH/英文</option>
+              <option disabled value="">请选择语言</option>
+               <option v-for="option in options" :key="option.id" :value="option.value">{{option.text}}</option>
             </select>
           </div>
           <div class="input">
-               <input type="text" placeholder="请输入..." class="search-input"/>
+               <input type="text" v-model="name" class="search-input"/>
                <div class="icon"><img src="../../assets/img/search.png" width="30px" height="30px"/></div>
           </div>
           <div class="qiehuan" @click="showM"><img src="../../assets/img/menu.png" alt=""></div>
@@ -47,6 +47,11 @@ import TreePack from './TreePack.js'
 export default {
   data() {
     return {
+      name: '',
+      options: [
+        { value: 'ENGLISH', text: 'ENGLISH/英语' },
+        { value: 'CHINESE', text: 'CHINESE/中文' }
+      ],
       menu: [],
       showMenu: true
     }
@@ -67,7 +72,6 @@ export default {
       this.showMenu = false
     })
   },
-
   methods: {
     /**
      *  移动端，实现点击菜单按钮显示导航
@@ -79,8 +83,8 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-// @import url('./index.css');
-.logo{
+@import url('./index.css');
+.logo {
   min-width: 240px;
 }
 </style>

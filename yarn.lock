@@ -4209,6 +4209,10 @@ js-base64@^2.1.8:
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.4.8.tgz#57a9b130888f956834aa40c5b165ba59c758f033"
 
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "http://nexus.tuositec.com/repository/npm-group/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
+
 js-message@1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/js-message/download/js-message-1.0.5.tgz#2300d24b1af08e89dd095bc1a4c9c9cfcb892d15"
@@ -7376,6 +7380,10 @@ vue-eslint-parser@^2.0.3:
 vue-hot-reload-api@^2.3.0:
   version "2.3.0"
   resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
+
+vue-i18n@^8.0.0:
+  version "8.0.0"
+  resolved "http://nexus.tuositec.com/repository/npm-group/vue-i18n/-/vue-i18n-8.0.0.tgz#ae0c6e05ec8e36151bcf5f47c7b538c8af6d0282"
 
 vue-loader@^15.3.0:
   version "15.3.0"

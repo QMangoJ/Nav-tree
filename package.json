@@ -10,7 +10,10 @@
     "doc:serve": "live-server --port=8097 --open=doc --watch=doc ",
     "doc:watch": "watch \"yarn doc\" src "
   },
-  "dependencies": {},
+  "dependencies": {
+    "js-cookie": "^2.2.0",
+    "vue-i18n": "^8.0.0"
+  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.12",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.12",

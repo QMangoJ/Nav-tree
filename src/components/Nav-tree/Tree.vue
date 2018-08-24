@@ -2,7 +2,7 @@
    <li :data-jdh='tree.index'
        :class='[tree.selfStyle]'
        @mousemove="showm(rootTree)" :deepth="tree.deepth">
-       <a :href='tree.url'> {{tree.name}}</a>
+       <a :href='tree.url'> {{$t("tree.name")}}</a>
     <ul v-if="tree.isShow"
          :class="tree.childStyle"
          v-Location
@@ -30,6 +30,11 @@ export default {
   directives: { Location, Event },
   props: ['tree', 'rootTree'],
   name: 'tree',
+  data() {
+    return {
+      item: this.tree.name
+    }
+  },
   methods: {
     /**
      * 通过此方法控制导航树显隐

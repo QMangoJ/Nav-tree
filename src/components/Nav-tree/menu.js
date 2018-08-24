@@ -1,96 +1,96 @@
 let menu = [
   {
-    name: '首页',
+    name: 'home',
     selfStyle: '',
     deepth: 1,
     url: '#'
   },
   {
-    name: '产品',
+    name: 'product',
     selfStyle: '',
     deepth: 1,
     child: [
       {
-        name: '打印机'
+        name: 'printer'
       },
       {
-        name: '软件'
+        name: 'software'
       },
       {
-        name: '材料'
+        name: 'materials'
       },
       {
-        name: '配件'
+        name: 'fitting'
       }
     ]
   },
   {
-    name: '模型',
+    name: 'module',
     selfStyle: '',
     deepth: 1,
     child: [
       {
-        name: '模型库'
+        name: 'modulebase'
       },
       {
-        name: '在线建模'
+        name: 'onlinemodeling'
       }
     ]
   },
   {
-    name: '应用案例',
+    name: 'case',
     selfStyle: '',
     deepth: 1,
     child: [
       {
-        name: '蛋糕店'
+        name: 'cakeshop'
       },
       {
-        name: '教育'
+        name: 'education'
       },
       {
-        name: '家庭'
+        name: 'family'
       },
       {
-        name: '其他'
+        name: 'others'
       }
     ]
   },
   {
-    name: '帮助中心',
+    name: 'help',
     selfStyle: '',
     deepth: 1,
     child: [
       {
-        name: '设计手册'
+        name: 'manual'
       },
       {
-        name: '操作说明'
+        name: 'introduction'
       },
       {
-        name: '常见问题'
+        name: 'issue'
       },
       {
-        name: '注意事项'
+        name: 'attention'
       }
     ]
   },
   {
-    name: '关于我们',
+    name: 'about',
     selfStyle: '',
     deepth: 1,
     child: [
       {
-        name: '关于我们'
+        name: 'about'
       },
       {
-        name: '关于我们'
+        name: 'about'
       },
       {
-        name: '关于我们'
+        name: 'about'
       },
       {
-        name: '关于我们'
+        name: 'about'
       }
     ]
   }
