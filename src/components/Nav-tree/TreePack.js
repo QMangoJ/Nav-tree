@@ -10,12 +10,11 @@
  */
 function dataPack(tree, index) {
   let n = tree
-
   // 对单个节点进行打包
   n.child = n.child || [] // 考虑到Tree.vue中的应用逻辑，故加此默认项
   n.selfStyle = n.selfStyle || 'parent-default'
   n.childStyle = n.childStyle || 'child-default '
-  n.url = n.url || 'https://baidu.com'
+  n.url = n.url || '#'
   n.isShow = n.isShow || false
   n.index = index
 

@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Products",
+    "val": [
+      {
+        "name": "Printer",
+        "val": [
+          {
+            "name": "CHOCINK 1",
+            "val": "#"
+          },
+          {
+            "name": "CHOCINK 2",
+            "val": "#"
+          },
+          {
+            "name": "CHOCINK 3",
+            "val": "#"
+          }
+        ]
+      },
+      {
+        "name": "Software",
+        "val": [
+          {
+            "name": "Chocink APP",
+            "val": "#"
+          },
+          {
+            "name": "Chocink Slic",
+            "val": "#"
+          },
+          {
+            "name": "Chocink Firmware",
+            "val": "#"
+          }
+        ]
+      },
+      {
+        "name": "Materials",
+        "val": [
+          {
+            "name": "Chocolate",
+            "val": [
+              {
+                "name": "Normal",
+                "val": "#"
+              },
+              {
+                "name": "Imported",
+                "val": "#"
+              }
+            ]
+          },
+          {
+            "name": "Custard",
+            "val": "#"
+          },
+          {
+            "name": "Green bean paste",
+            "val": "#"
+          },
+          {
+            "name": "Milk candy",
+            "val": "#"
+          },
+          {
+            "name": "Lpomoea batatas",
+            "val": "#"
+          }
+        ]
+      },
+      {
+        "name": "Extras",
+        "val": [
+          {
+            "name": "Add-ons",
+            "val": [
+              {
+                "name": "Refrigeration Kit",
+                "val": "#"
+              },
+              {
+                "name": "Intelligent self-zero",
+                "val": "#"
+              },
+              {
+                "name": "Incubator",
+                "val": "#"
+              }
+            ]
+          },
+          {
+            "name": "Spare Parts",
+            "val": [
+              {
+                "name": "Header",
+                "val": "#"
+              },
+              {
+                "name": "Mechanical Toolkit",
+                "val": "#"
+              },
+
+              {
+                "name": "Nozzle pack",
+                "val": "#"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Models",
+    "val": [
+      {
+        "name": "models Database",
+        "val": "#"
+      },
+      {
+        "name": "Online modeling",
+        "val": "#"
+      }
+    ]
+  },
+  {
+    "name": "Resources",
+    "val": [
+      {
+        "name": "Manuals",
+        "val": "#"
+      },
+      {
+        "name": "Operation guide",
+        "val": "#"
+      },
+      {
+        "name": "FAQ",
+        "val": "#"
+      },
+      {
+        "name": "Attentions",
+        "val": "#"
+      }
+    ]
+  },
+  {
+    "name": "Cases",
+    "val": [
+      {
+        "name": "Cake shop",
+        "val": "#"
+      },
+      {
+        "name": "Education",
+        "val": "#"
+      },
+      {
+        "name": "House",
+        "val": "#"
+      },
+      {
+        "name": "Other",
+        "val": "#"
+      }
+    ]
+  },
+  {
+    "name": "Company",
+    "val": "#"
+  }
+]

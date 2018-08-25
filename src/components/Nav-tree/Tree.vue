@@ -1,7 +1,7 @@
  <template>
    <li :data-jdh='tree.index'
        :class='[tree.selfStyle]'
-       @mousemove="showm(rootTree)" :deepth="tree.deepth">
+       @click="showm(rootTree)" :deepth="tree.deepth">
        <a :href='tree.url'> {{tree.name}}</a>
     <ul v-if="tree.isShow"
          :class="tree.childStyle"

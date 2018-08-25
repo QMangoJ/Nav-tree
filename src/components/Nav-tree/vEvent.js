@@ -62,11 +62,11 @@ let vEvent = {
     gRoot = el.parentNode // 指令添加在了跟组件的child上
     gTreeData = binding.value
     chageRecursion(gTreeData, 0, []) // 解绑定时，清空控制数组原有内容
-    document.addEventListener('mousemove', changeState)
+    document.addEventListener('mousedown', changeState)
   },
   unbind: function(el, binding, vnode) {
     if (binding.value === -1) return
-    document.removeEventListener('mousemove', changeState)
+    document.removeEventListener('mousedown', changeState)
   }
 }
 
