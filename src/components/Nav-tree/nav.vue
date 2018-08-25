@@ -3,33 +3,33 @@
     <div class="header row">
       <!-- logo-begin -->
       <div class=" logo">
-         <img src="../../assets/img/logo.png" width="140px" height="48px"/>
+        <img src="../../assets/img/logo.png" width="140px" height="48px" />
       </div>
       <!-- logo-end -->
       <!-- nav-begin -->
       <div class="nav-zdy">
-          <ul class="menu-zdy" v-show="showMenu">
-            <tree v-for="m in menu"  :key="m.id" :tree="m" :root-tree="m"></tree>
-          </ul>
+        <ul class="menu-zdy" v-show="showMenu">
+          <tree v-for="m in menu" :key="m.id" :tree="m" :root-tree="m"></tree>
+        </ul>
       </div>
       <!-- nav-end -->
       <!-- search-begin -->
       <div class="search">
-          <div class="change">
-            <select class="change-select">
-              <option disabled value="">请选择语言</option>
-               <option v-for="option in options" :key="option.id" :value="option.value">{{option.text}}</option>
-            </select>
-          </div>
-          <div class="input">
-               <input type="text" v-model="name" class="search-input"/>
-               <div class="icon"><img src="../../assets/img/search.png" width="30px" height="30px"/></div>
-          </div>
-          <div class="qiehuan" @click="showM"><img src="../../assets/img/menu.png" alt=""></div>
+        <div class="change">
+          <select class="change-select">
+            <option disabled value="">请选择语言</option>
+            <option v-for="option in options" :key="option.id" :value="option.value">{{option.text}}</option>
+          </select>
+        </div>
+        <div class="input">
+          <input type="text" v-model="name" class="search-input" />
+          <div class="icon"><img src="../../assets/img/search.png" width="30px" height="30px" /></div>
+        </div>
+        <div class="qiehuan" @click="showM"><img src="../../assets/img/menu.png" alt=""></div>
       </div>
       <!-- search-end -->
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -61,8 +61,11 @@ export default {
   },
   // 完成el和data的挂载
   mounted() {
+    let rawData = this.$t('menuss')
+    // console.log(this.$t('menu'))
     for (let data of rawData) {
       let m1 = TreePack.dataPack(data, 0)
+      console.log('aa', m1)
       this.menu.push(m1)
     }
     // 为window对象添加窗口变化监听事件，实现窗口宽度小于992px时自动隐藏导航栏

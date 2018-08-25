@@ -1,41 +1,37 @@
 <template>
   <div>
     <nav-tree></nav-tree>
-    <h1 class="aa">{{$t("message.hello")}}</h1>
-    <h1>{{$t("message.Model")}}</h1>
-    <h2 class="bbb" v-for="item in menu" :key="item.id">{{item}}</h2>
-    <div class="sss">
-    <select class="" v-model="locale">
-        <!-- <option disabled value="">请选择语言</option> -->
-        <option v-for="option in options" :key="option.id" :value="option.key">{{option.value}}</option>
-    </select>
-    <span>{{locale}}</span>
-    </div>
+    <!-- <h1 @click="change">Name</h1>
+    <div v-for="n in $t('menuss')" :key="n.id" @click="onclick(n)">
+      {{n.name }}
+      <div v-if=n.isShow>
+        <div v-for="n2 in n.child" :key="n2.id">
+          {{n2.name}}
+        </div>
+      </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import navTree from '../../components/Nav-tree/nav'
-// import LangStorage from '../../../static/lang'
 export default {
   data() {
-    return {
-      options: [
-        { value: 'ENGHLIS/英语', key: 'en' },
-        { value: 'CHINESE/中文', key: 'zh' }
-      ],
-      menu: [],
-      locale: 'en'
-    }
-  },
-  computed: {},
-  watch: {
-    locale(val) {
-      return (this.$i18n.locale = val)
-    }
+    return {}
   },
   components: {
     navTree
+  },
+  mounted: function() {
+    // console.log(this.$t('nav.message'))
+  },
+  methods: {
+    // onclick: function(n) {
+    //   n.isShow = !n.isShow
+    // },
+    // change: function() {
+    //   this.$i18n.locale = this.$i18n.locale === 'en' ? 'zh' : 'en'
+    // }
   }
 }
 </script>

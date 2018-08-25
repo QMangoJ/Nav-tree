@@ -63,6 +63,7 @@ let vEvent = {
     gTreeData = binding.value
     chageRecursion(gTreeData, 0, []) // 解绑定时，清空控制数组原有内容
     document.addEventListener('mousedown', changeState)
+    console.log('aa')
   },
   unbind: function(el, binding, vnode) {
     if (binding.value === -1) return

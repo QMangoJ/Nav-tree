@@ -3,8 +3,8 @@ import app from './App.vue'
 import router from './router'
 import VueI18n from 'vue-i18n'
 
-import LangEn from '../i18n/en'
-import LangZhCHS from '../i18n/zhCHS'
+import LangEn from '@/i18n/en'
+import LangZhCHS from '@/i18n/zhCHS'
 
 Vue.use(VueI18n)
 Vue.config.productionTip = false
