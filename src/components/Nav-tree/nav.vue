@@ -16,7 +16,7 @@
       <!-- search-begin -->
       <div class="search">
         <div class="change">
-          <select class="change-select">
+          <select class="change-select" @change="change">
             <option disabled value="">请选择语言</option>
             <option v-for="option in options" :key="option.id" :value="option.value">{{option.text}}</option>
           </select>
@@ -61,11 +61,9 @@ export default {
   },
   // 完成el和data的挂载
   mounted() {
-    let rawData = this.$t('menuss')
-    // console.log(this.$t('menu'))
     for (let data of rawData) {
       let m1 = TreePack.dataPack(data, 0)
-      console.log('aa', m1)
+      console.log('aa', this.$t('home'))
       this.menu.push(m1)
     }
     // 为window对象添加窗口变化监听事件，实现窗口宽度小于992px时自动隐藏导航栏
@@ -81,6 +79,9 @@ export default {
      */
     showM: function() {
       this.showMenu = !this.showMenu
+    },
+    change: function() {
+      this.$i18n.locale = this.$i18n.locale === 'en' ? 'zh' : 'en'
     }
   }
 }

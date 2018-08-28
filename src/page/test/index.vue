@@ -26,9 +26,9 @@ export default {
     // console.log(this.$t('nav.message'))
   },
   methods: {
-    // onclick: function(n) {
-    //   n.isShow = !n.isShow
-    // },
+    onclick: function(n) {
+      n.isShow = !n.isShow
+    }
     // change: function() {
     //   this.$i18n.locale = this.$i18n.locale === 'en' ? 'zh' : 'en'
     // }
